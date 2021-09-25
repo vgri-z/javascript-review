@@ -53,20 +53,50 @@
       // }
       // i++; // i = 2
 
-      // 0! = 1 * 1
-      // 1! = 1 * 1
-      // 2! = 2 * 1
-      // 3! = 3 * 2 * 1
-      // 4! = 4 * 3 * 2 *1
+      // --------------------------------------
+      // 计算2的n次幂，n可输入，n为自然数
+      // var n = parseInt(window.prompt("input"));
 
-      var n = parseInt(window.prompt("input"));
+      // var num = 1;
+      // for (var i = 0; i < n; i++) {
+      //   num *= 2;
+      // }
+      // console.log(num);
 
-      var mul = 1;
-      for (var i = 1; i <= n; i++) {
-        mul *= i;
-      }
+      // 计算n的阶乘，n可输入。
+      // var n = parseInt(window.prompt("input"));
 
-      console.log(mul);
+      // // 0! = 1
+      // // 1! = 1 * 1
+      // // 2! = 2 * 1
+      // // 3! = 3 * 2 * 1
+      // var mul = 1;
+      // for (var i = 1; i <= n; i++) {
+      //   mul *= i;
+      // }
+      // console.log(mul);
+
+      // 著名的斐波那契数列(这个数从第三项开始，每一项的和都等于前两项之和)，1 1 2 3 5 8，输出第n项
+
+      // typeof
+
+      // 显示类型转化
+      // Number(xxx) 将参数转化为数字，对于不能转化的返回NaN
+
+      // parseInt(num, radix) 转化为整型，从数字类开始看，一直看到非数字为止，返回原来的数
+      // 进制转换：以目标进制为基底，转化为十进制
+
+      // parseFloat() 转化为浮点型，从数字类开始看，一直看到除第一个小数点意外的非数字类为止，返回前面的数
+
+      // toString(radix) 想将什么转化为字符串，就什么点toString()就可以了
+      // 进制转换：以十进制为基底，转化为目标进制
+
+      // String() 将参数转化为字符串，写什么都转化为字符串
+
+      // Boolean() 将参数转化为布尔值
+
+      // 隐式类型转化
+      // 隐式类型转化在内部调用显示类型转化的方法
     </script>
   </body>
 </html>

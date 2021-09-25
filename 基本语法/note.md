@@ -15,4 +15,13 @@
 * 转化为布尔值为 false 的值
   '' / 0 / false / null / undefined / NaN
 
-*
+* typeof 返回的六种值得类型
+  number string boolean object function undefined
+  typeof(null) 返回 object，null 最早是用来替代空的 object 的
+
+* 显示类型转化
+  Number() parseInt() parseFloat() toString() String() Boolean()
+  undefined 和 null 不能使用 toString()
+
+* 隐式类型转化
+  'isNan()' | '++' | '--' | '+/-(一元正负)' | '+' | '\*' | '%' | '&'& | '||' | '!' | '<' | '>' | '<=' | '>= '| '==' | '!='
