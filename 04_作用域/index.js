@@ -33,3 +33,12 @@ foo();
 // 先生成GO -> foo被定义，会保存GO作为自己的作用域链的最顶端 -> global = 100 -> foo被执行 -> foo的执行产生了bar的定义
 // 会保存foo的作用域作为自己作用域链的最顶端 -> aa = 123 -> bar执行，bb = 234 aa = 0 -> log(aa)
 // 0
+
+function a() {
+  function b() {
+    function c() {}
+    c();
+  }
+  b();
+}
+a();
