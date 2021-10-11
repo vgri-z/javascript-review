@@ -92,3 +92,63 @@
 
 // 执行符号：()
 // 只有表达式才可以被执行符号执行
+
+// 函数表达式
+// var test = function () {
+//   console.log("立即执行函数");
+// };
+
+// test();
+
+// 函数声明
+// function test() {
+//   console.log("立即执行函数");
+// }
+// test();
+
+// 立即执行函数执行过后，函数名称就会被废弃
+// var test = (function () {
+//   console.log("只有表达式才能被执行");
+// })();
+
+// 添加一个+号，就有把函数转化为数字的趋势，此时的的函数就相当于一个不表达式，所以可以被执行符号执行
+// +(function test(num) {
+//   console.log(num);
+// })(12);
+
+// -(function test() {
+//   console.log("----");
+// })();
+
+// !(function () {
+//   console.log("!!!!");
+// })();
+
+// 闭包的防范，通过立即执行函数
+
+// function test() {
+//   var arr = [];
+//   for (var i = 0; i < 10; i++) {
+//     arr[i] = function () {
+//       console.log(i + " ");
+//     };
+//   }
+//   return arr;
+// }
+
+// function test() {
+//   var arr = [];
+//   for (var i = 0; i < 10; i++) {
+//     (function (i) {
+//       arr[i] = function () {
+//         console.log(i + " ");
+//       };
+//     })(i);
+//   }
+//   return arr;
+// }
+
+// var myArr = test();
+// for (var j = 0; j < 10; j++) {
+//   myArr[j]();
+// }
